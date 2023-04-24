@@ -8,6 +8,10 @@ module Greetings
   # https://www.ruby-lang.org/en/documentation/faq/8/#:~:text=What%20is%20the%20difference%20between%20a%20class%20and%20a%20module,instance%20state%20(instance%20variables).
   # modules cannot generate instances
 
+  def self.included(base)
+    # invoked on include
+  end
+
   def hello
     puts 'Hello!'
   end
