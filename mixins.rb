@@ -19,10 +19,12 @@ end
 
 class Ian
   # add module methods as instance methods
+  # Good: Ian.new.hello; Bad: Ian.hello
   include Greetings
 end
 
 class Elise
   # add module methods as class methods
+  # Good: Elise.hello; Bad: Elise.new.hello
   extend Greetings
 end
